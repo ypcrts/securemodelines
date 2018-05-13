@@ -124,6 +124,9 @@ fun! <SID>DoModeline(line) abort
 endfun
 
 fun! <SID>DoModelines() abort
+    if exists("b:disable_secure_modelines")
+        return
+    endif
     if line("$") > g:secure_modelines_modelines
         let l:lines={ }
         call map(filter(getline(1, g:secure_modelines_modelines) +
