@@ -11,6 +11,8 @@ The `g:secure_modelines_modelines` variable overrides the number of lines to che
 
 If `g:secure_modelines_leave_modeline` is defined, the script will not clobber &modeline. Otherwise &modeline will be unset.
 
+If `b:disable_secure_modelines` is defined, securemodelines will not run for the current buffer. The intent being to turn off securemodelines in an ftplugin.
+
 Keeping things up to date on vim.org is a nuisance. For the latest version, visit: http://github.com/ciaranm/securemodelines
 
 Install into your plugin directory of choice.
