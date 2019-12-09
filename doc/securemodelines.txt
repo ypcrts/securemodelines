@@ -57,6 +57,9 @@ to check. By default it is 5.
 If g:secure_modelines_leave_modeline is defined, the script will not
 clobber &modeline. Otherwise &modeline will be unset.
 
+If b:disable_secure_modelines is defined, securemodelines will not run for the
+current buffer. The intent being to turn off securemodelines in an ftplugin.
+
 Install into your plugin directory of choice.
 
 ==============================================================================
