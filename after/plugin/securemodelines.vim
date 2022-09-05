@@ -29,6 +29,7 @@ if (! exists("g:secure_modelines_allowed_items"))
                 \ "autoindent",  "ai",   "noautoindent", "noai",
                 \ "spell", "nospell",
                 \ "spelllang",
+                \ "syntax",
                 \ "wrap",  "nowrap"
                 \ ]
 endif
